@@ -1,0 +1,57 @@
+.cartoons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cartoon-active,
+.cartoon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: 2px solid #cccc;
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+}
+.cartoon:hover {
+    border: 3px solid #fdd10d !important;
+}
+.cartoon-active {
+    border: 3px solid #0d6efd !important;
+}
+.cartoon-active img,
+.cartoon img {
+    height: 80px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: auto;
+}
+.cartoon-active p,
+.cartoon p {
+    text-align: left;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.result {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.inputTable[type="number"] {
+    background-color: none;
+    border: none;
+}
+.cartoonResults {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    flex-direction: column;
+    height: 650px;
+    margin: auto;
+}
